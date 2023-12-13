@@ -1,10 +1,12 @@
 # prosody_project
 
 This project contains two models, one that process data as words and audio, and another that process data as words.
+Only the LSTM-part of the model-scripts are intended to be used.
 
 Necessary to run the models is also the dictionary_corpus in yedetere et al. (2023)
 
 The models can be run using these commands:
+
 
 python audio_main.py --data [DATA] --nlayers 2 --nhid 600 --emsize 300 --lr 5.0 --batch_size 20 --dropout 0.4 --seed 1001 --model LSTM --save audio_models/lstm.pt --log audio_models/lstm.log
 
